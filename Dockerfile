@@ -10,7 +10,7 @@ RUN apk add --no-cache python3 python3-dev gcc musl-dev zlib-dev libffi-dev open
     apk del python3-dev gcc musl-dev zlib-dev libffi-dev openssl-dev && \
     rm -rf /var/cache/apk/* /root/.cache /tmp/* 
 
-COPY scm-source.json /
+#COPY scm-source.json /
 
 COPY requirements.txt /
 RUN pip3 install -r /requirements.txt
